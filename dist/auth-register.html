@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="utf-8" />
+    <title>معكم</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="يهدف موقع معكم إلى توفير بيئة آمنة وداعمة لتواصل الأفراد من ذوي الاحتياجات الخاصة والمعاقين، وكذلك الأشخاص الذين يعانون من حالات مثل الهربس وHIV، إضافة إلى الصم والبكم. نحن نؤمن بأن لكل إنسان الحق في الحب، الدعم، واختيار شريك حياته بدون قيود أو أحكام مسبقة.    ">
+    <meta name="keywords" content="معكم , ذوي الاحتياجات الخاصه , التعارف ">
+    <meta content="Themesbrand" name="author" />
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="assets/images/ma3kom-logo.png" id="tabIcon">
+
+    <!-- Bootstrap Css -->
+    <link href="assets/css/bootstrap-rtl.min.css" id="bootstrap-style" rel="stylesheet" type="text/css" />
+    <!-- Icons Css -->
+    <link href="assets/css/icons-rtl.min.css" rel="stylesheet" type="text/css" />
+    <!-- App Css-->
+    <link href="assets/css/app-rtl.min.css" id="app-style" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <div class="auth-bg my-4">
+        <div class="container p-0">
+            <div class="row justify-content-center g-0">
+                <div class="col-xl-9 col-lg-8">
+                    <div class="authentication-page-content shadow-lg">
+                        <div class="d-flex flex-column h-100 px-4 pt-4">
+                            <div class="row justify-content-center my-auto">
+                                <div class="col-12">
+                                    <div class="py-md-5 py-4">
+                                        <div class="text-center mb-5">
+                                            <a><img src="assets/images/ma3kom-logo.png" width="80px"
+                                                    height="80px" /></a>
+                                            <p class="text-muted fs-3">انشاء حساب</p>
+                                        </div>
+                                        <form class="needs-validation" novalidate action="chat.html">
+                                            <div class="mb-3">
+                                                <label for="useremail" class="form-label">الاسم</label>
+                                                <input type="text" class="form-control" id="useremail" placeholder="ادخال الاسم" required />
+                                                <div class="invalid-feedback">الاسم</div>
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="useremail" class="form-label">البريد الالكتروني</label>
+                                                <input type="email" class="form-control" id="useremail" placeholder="البريد الالكتروني" required />
+                                                <div class="invalid-feedback">ادخل البريد الالكتروني</div>
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="username" class="form-label">كلمه المرور</label>
+                                                <input type="text" class="form-control" id="username" placeholder="ادخل كلمه المرور" required />
+                                                <div class="invalid-feedback">ادخل كلمه المرور</div>
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="userpassword" class="form-label">تآكيد كلمه المرور</label>
+                                                <input type="password" class="form-control" id="userpassword" placeholder="تآكيد كلمه المرور" required />
+                                                <div class="invalid-feedback">تآكيد كلمه المرور</div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-12 col-lg-6 mx-auto">
+                                                    <div class="mb-3 text-center">
+                                                        <label for="userpassword" class="form-label">النوع</label>
+                                                        <div class="invalid-feedback">برجاء اختيار النوع</div>
+                                                    </div>
+                                                    <div
+                                                        class="mb-3 text-center border my-3 py-3 d-flex align-items-center justify-content-center gap-4">
+                                                        <div class="form-group">
+                                                            <label class="form-label" for="male">ذكر</label>
+                                                            <input type="radio" id="male" name="gender" required />
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label class="form-label" for="female">انثي</label>
+                                                            <input type="radio" id="female" name="gender" required />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="useremail" class="form-label">نوع الحالة</label>
+                                                <select class="form-control" id="useremail" required>
+                                                    <option value="" disabled selected>اختر نوع الحالة</option>
+                                                    <option value="كفيف">كفيف</option>
+                                                    <option value="صم وبكم">صم وبكم</option>
+                                                    <option value="ذوي الاعاقه">ذوي الإعاقة</option>
+                                                    <option value="hiv">HIV</option>
+                                                    <option value="hsv">HSV</option>
+                                                </select>
+                                                <div class="invalid-feedback">برجاء اختيار نوع الحالة</div>
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="description" class="form-label">وصف الحاله</label>
+                                                <input type="text" class="form-control" id="description" placeholder="ادخل وصف الحاله" required />
+                                                <div class="invalid-feedback">ادخل وصف الحاله</div>
+                                            </div>
+                                        
+                                            <div class="mb-3 text-center">
+                                                <label for="profilePicture" class="form-label">الصوره الشخصية (اختياري)</label>
+                                                <div class="border rounded p-4 d-flex flex-column align-items-center">
+                                                    <input type="file" class="form-control d-none" id="profilePicture" accept="image/*" />
+                                                    <label for="profilePicture" class="text-primary" style="cursor: pointer;">
+                                                        <i class="mdi mdi-upload"></i> رفع الصورة
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <div class="mb-3">
+                                                        <label for="country" class="form-label">الدولة</label>
+                                                        <select class="form-control" id="country" required>
+                                                            <option value="" disabled selected>اختر الدولة</option>
+                                                            <option value="egypt">مصر</option>
+                                                            <option value="ksa">السعودية</option>
+                                                            <option value="uae">الإمارات</option>
+                                                        </select>
+                                                        <div class="invalid-feedback">برجاء اختيار الدولة</div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <div class="mb-3">
+                                                        <label for="city" class="form-label">المحافظة</label>
+                                                        <select class="form-control" id="city" required>
+                                                            <option value="" disabled selected>اختر المحافظة</option>
+                                                            <option value="cairo">القاهرة</option>
+                                                            <option value="giza">الجيزة</option>
+                                                            <option value="alex">الإسكندرية</option>
+                                                        </select>
+                                                        <div class="invalid-feedback">برجاء اختيار المحافظة</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <!-- الحالة الاجتماعية -->
+                                                <div class="col-md-6 my-3">
+                                                    <label for="socialStatus" class="form-label">الحالة الاجتماعية</label>
+                                                    <input type="text" class="form-control" id="socialStatus" placeholder="مثال : الحالة الاجتماعية" required />
+                                                    <div class="invalid-feedback">
+                                                        برجاء إدخال الحالة الاجتماعية
+                                                    </div>
+                                                </div>
+                                            
+                                                <!-- المؤهل التعليمي -->
+                                                <div class="col-md-6 my-3">
+                                                    <label for="education" class="form-label">المؤهل التعليمي</label>
+                                                    <input type="text" class="form-control" id="education" placeholder="مثال : بكالوريوس تجارة" required />
+                                                    <div class="invalid-feedback">
+                                                        برجاء إدخال المؤهل التعليمي
+                                                    </div>
+                                                </div>
+                                            
+                                                <!-- التدخين -->
+                                                <div class="col-md-6 my-3">
+                                                    <label for="smoking" class="form-label">التدخين</label>
+                                                    <input type="text" class="form-control" id="smoking" placeholder="مثال : غير مدخن" required />
+                                                    <div class="invalid-feedback">
+                                                        برجاء إدخال حالة التدخين
+                                                    </div>
+                                                </div>
+                                            
+                                                <!-- الدخل الشهري -->
+                                                <div class="col-md-6 my-3">
+                                                    <label for="income" class="form-label">الدخل الشهري</label>
+                                                    <input type="text" class="form-control" id="income" placeholder="مثال : 5000 جنيه" required />
+                                                    <div class="invalid-feedback">
+                                                        برجاء إدخال الدخل الشهري
+                                                    </div>
+                                                </div>
+                                            
+                                                <!-- الوظيفة -->
+                                                <div class="col-md-6 my-3">
+                                                    <label for="job" class="form-label">الوظيفة</label>
+                                                    <input type="text" class="form-control" id="job" placeholder="مثال : الوظيفة" required />
+                                                    <div class="invalid-feedback">
+                                                        برجاء إدخال الوظيفة
+                                                    </div>
+                                                </div>
+                                            
+                                                <!-- الطول -->
+                                                <div class="col-md-6 my-3">
+                                                    <label for="height" class="form-label">الطول</label>
+                                                    <input type="text" class="form-control" id="height" placeholder="مثال : 167 سم" required />
+                                                    <div class="invalid-feedback">
+                                                        برجاء إدخال الطول
+                                                    </div>
+                                                </div>
+                                            
+                                                <!-- الالتزام الديني -->
+                                                <div class="col-md-6 my-3">
+                                                    <label for="religiousCommitment" class="form-label">الالتزام الديني</label>
+                                                    <input type="text" class="form-control" id="religiousCommitment" placeholder="مثال : متدين" required />
+                                                    <div class="invalid-feedback">
+                                                        برجاء إدخال الالتزام الديني
+                                                    </div>
+                                                </div>
+                                            
+                                                <!-- اللهجة -->
+                                                <div class="col-md-6 my-3">
+                                                    <label for="dialect" class="form-label">اللحيه</label>
+                                                    <input type="text" class="form-control" id="dialect" placeholder="مثال : ملتحي" required />
+                                                    <div class="invalid-feedback">
+                                                        برجاء إدخال اللهجة
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="my-4">
+                                                <button class="btn btn-primary w-100 waves-effect waves-light" type="submit">انشاء حساب</button>
+                                            </div>
+                                            <div class="mt-4 text-center">
+                                                <div class="signin-other-title">
+                                                    <h5 class="fs-14 mb-4 title">انشاء حساب بواسطه</h5>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-6 mx-auto">
+                                                        <div>
+                                                            <button type="button" class="btn btn-soft-danger w-100">
+                                                                <i class="mdi mdi-google"></i> جوجل
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                        
+                                        <!-- end form -->
+
+                                        <div class="mt-5 text-center text-muted">
+                                            <p  style="font-size: 18px;">
+                                                لديك حساب بالفعل ؟
+                                                <a href="auth-login.html" 
+                                                    class="fw-medium text-decoration-underline">تسجيل الدخول</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- end col -->
+                            </div>
+                            <!-- end row -->
+
+                        </div>
+                    </div>
+                </div>
+                <!-- end col -->
+            </div>
+            <!-- end row -->
+        </div>
+        <!-- end container-fluid -->
+        <h5 class="text-center mt-3">
+            تصميم وتطوير
+            <a href="https://brmja.tech" class="text-decoration-underline">برمجه تك
+            </a>
+        </h5>
+    </div>
+    <!-- end auth bg -->
+
+    <!-- JAVASCRIPT -->
+    <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/libs/simplebar/simplebar.min.js"></script>
+    <script src="assets/libs/node-waves/waves.min.js"></script>
+    <!-- validation init -->
+    <script src="assets/js/pages/validation.init.js"></script>
+
+    <!-- theme-style init -->
+    <script src="assets/js/pages/theme-style.init.js"></script>
+
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>
